@@ -111,9 +111,18 @@ h2 {
 
 .skills-container {
   display: grid;
+  /* This "repeat(auto-fit...)" line is the secret to making 
+       the icons wrap to a new line on mobile automatically */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* .skills-container {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
-}
+} */
 
 .skill-card {
   background: var(--card-bg);
