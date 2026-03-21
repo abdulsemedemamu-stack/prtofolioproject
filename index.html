@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <h2 class="logo">Abdulsemed</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <h1>Hello, I'm <span>Abdulsemed</span></h1>
+      <p>Frontend Developer | MERN Stack Learner</p>
+      <button onclick="scrollToSection('projects')">View Work</button>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am passionate about building modern web applications using React and
+        Node.js.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Simple MERN app</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Portfolio website</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: example@gmail.com</p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
