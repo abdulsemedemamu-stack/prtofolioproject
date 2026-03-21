@@ -21,6 +21,7 @@ body {
 }
 
 /* Navbar */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -56,6 +57,7 @@ nav {
 }
 
 /* Hero Section */
+
 .hero {
   height: 80vh;
   display: flex;
@@ -259,4 +261,67 @@ footer h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Container for the mini cards */
+.project-mini-grid {
+  display: grid;
+  /* This creates a responsive grid without Bootstrap */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px 10%;
+}
+
+/* Small Card Styling */
+.project-mini-card {
+  background: var(--card-bg);
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.project-mini-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+/* Small Circle for Image/Icon */
+.mini-img-circle {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  border: 2px solid rgba(56, 189, 248, 0.2);
+}
+
+.mini-content h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.mini-content p {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+
+.mini-btn {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.mini-btn:hover {
+  filter: brightness(1.2);
 }
