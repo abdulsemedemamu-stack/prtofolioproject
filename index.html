@@ -2,57 +2,122 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Abdulsemed | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- Navbar -->
-    <header>
-      <nav>
-        <h2 class="logo">Abdulsemed</h2>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <div class="logo-wrapper">
+        <img
+          src="../portfolio/img/best profile.png"
+          alt="Abdulsemed"
+          class="nav-avatar"
+        />
+        <div class="logo">ABD<span>SEA</span></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-      <h1>Hello, I'm <span>Abdulsemed</span></h1>
-      <p>Frontend Developer | MERN Stack Learner</p>
-      <button onclick="scrollToSection('projects')">View Work</button>
-    </section>
+      <div class="hero-content">
+        <div class="profile-container">
+          <img
+            src="profile.png"
+            alt="Abdulsemed Emau"
+            class="hero-profile-img"
+          />
+        </div>
 
-    <!-- About -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am passionate about building modern web applications using React and
-        Node.js.
-      </p>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Simple MERN app</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Portfolio website</p>
+        <h2>Hi, I'm <span class="highlight">Abdulsemed Emau</span></h2>
+        <p>Full-Stack Developer | MERN & React Native Specialist</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn primary">View Work</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: example@gmail.com</p>
+    <section id="skills" class="skills">
+      <h2>Tech Stack</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <p>React / Native</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-node-js"></i>
+          <p>Node.js</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <p>MongoDB</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <p>JavaScript</p>
+        </div>
+      </div>
     </section>
+
+    <section id="projects" class="projects">
+      <h2>Selected Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-img"></div>
+          <div class="project-info">
+            <h3>Mobile Marketplace</h3>
+            <p>A specialized platform for mobile phone commerce.</p>
+            <a href="#" class="project-link"
+              >View Repo <i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"></div>
+          <div class="project-info">
+            <h3>Collab Platform</h3>
+            <p>Inter-University collaboration tool for research.</p>
+            <a href="#" class="project-link"
+              >View Repo <i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <h2>Let's Connect</h2>
+      <div class="contact-info-text">
+        <p><i class="fas fa-envelope"></i> abdulsemed@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 0967657548</p>
+        <p><i class="fas fa-map-marker-alt"></i> Wolkite, Ethiopia</p>
+      </div>
+
+      <div class="socials">
+        <a href="https://t.me/abdseatech" target="_blank">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="http://www.youtube.com/@abdseaTech" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://github.com/abdulsemedemamu-stack" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <p class="copyright">© 2026 Abdsea Tech. Let's build something great.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
