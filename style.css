@@ -143,7 +143,7 @@ h2 {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 20px;
 }
 
 .project-card {
@@ -269,7 +269,7 @@ footer h2 {
   /* This creates a responsive grid without Bootstrap */
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
-  padding: 20px 10%;
+  padding: 10px 10%;
 }
 
 /* Small Card Styling */
@@ -324,4 +324,30 @@ footer h2 {
 
 .mini-btn:hover {
   filter: brightness(1.2);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.about-stats {
+  flex: 1;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
